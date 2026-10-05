@@ -17,8 +17,6 @@
                 DT65
             </a>
 
-
-            
             <ul class="nav-list">
                 <li><a href="#home">Главная</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
@@ -43,7 +41,7 @@
 
     <div class="container">
         <div class="hero-content">
-            <h1>Привет! Я Дарья — Kotlin, C++, Qt, Web-разработчик</h1>
+            <h1>Привет! Я Дарья — Kotlin, C++, Rust, Qt, Web-разработчик</h1>
             <h2>Создаю быстрые, адаптивные и современные приложения и веб-сайты.</h2>
             <p>Специализируюсь на бэкенд- и фронтенд-разработке, превращая макеты в интерактивные и удобные интерфейсы и приложения. Использую современный стек технологий для достижения результата.</p>
 
@@ -61,23 +59,11 @@
             <img src="me.jpg" alt="Фото Дарья">
         </div>
     </div>
-<!--
- <div class="cookie-container">
-        <div class="cookie-trigger" onclick="activateRobot()">
-            <div class="cookie">
-                <div class="cookie-chip"></div>
-                <div class="cookie-chip"></div>
-                <div class="cookie-chip"></div>
-            </div>
-        </div>
-    </div>
--->
 
 <div class="cookie-hint">
   <span class="cookie-text">Нажимайте на вкусняшки в течение путешествия по сайту</span>
 </div>
 
-<!-- На это -->
 <div class="cookie-container">
 <div class="cookie-trigger" onclick="activateRobot('robot')">
     <div class="cookie-emoji">🍪</div>
@@ -87,29 +73,10 @@
         <span>Мои работы</span>
     </a>
 
-
-    
-    <!-- Робот 
-    <div class="robot" id="robot">
-        <div class="robot-head">
-            <div class="robot-eye left-eye"></div>
-            <div class="robot-eye right-eye"></div>
-            <div class="robot-mouth"></div>
-        </div>
-        <div class="robot-body">
-            <div class="robot-arm left-arm"></div>
-            <div class="robot-arm right-arm"></div>
-        </div>
-    </div>
-</div>
--->
-
   <!-- РОБОТ GIGACHAT С ШЛЕЙФОМ -->
     <div class="robot-gigachat" id="robot">
         <img src="GigaChat.png" alt="GigaChat Робот" class="gigachat-image">
-        <!-- СИНИЙ ШЛЕЙФ -->
         <div class="robot-trail"></div>
-        <!-- СВЕЧЕНИЕ СНИЗУ -->
         <div class="robot-glow"></div>
     </div>
 
@@ -118,7 +85,6 @@
     </audio>
 
 <script src="script.js"></script>
-    
 
 <!-- Модальное окно для мобильных -->
 <div class="mobile-modal" id="mobileModal">
@@ -140,31 +106,10 @@
 
 </section>
 
-<!--
-<div class="video-background">
-        <video autoplay muted loop playsinline class="video-bg">
-            <source src="video.mp4" type="video/mp4">
-
-        </video>
-        <div class="video-overlay"></div>
-    </div>
--->
-
-<!-- Секция "Портфолио" -->
 <!-- Секция "Портфолио" -->
 <section class="portfolio-section" id="portfolio">
 
-
-
     <div class="portfolio-container">
-<!--
-        <div class="side-image left-bottom">
-        <img src="D.png" alt="Декоративный элемент" class="tilted-image">
-    </div>
-    <div class="side-image right-bottom">
-        <img src="T.png" alt="Декоративный элемент" class="tilted-image">
-    </div>
--->
 
  <!-- Активатор -->
     <div class="activator-container">
@@ -179,9 +124,7 @@
         <div class="robot-trail"></div>
     </div>
 
-
         <h2 class="section-title">Мои Работы</h2>
-       <!-- <p class="section-subtitle">Реализованные проекты и приложения</p>-->
         
         <div class="portfolio-grid">
             <!-- Проект 1 - Jarvis -->
@@ -307,6 +250,36 @@
                 </div>
             </div>
 
+            <!-- Проект - Rust REST API -->
+<div class="portfolio-card">
+    <div class="portfolio-header">
+        <span class="project-emoji">🦀</span>
+    </div>
+    
+    <div class="portfolio-body">
+        <h3 class="portfolio-title">Rust: REST API проекты</h3>
+        <p class="portfolio-description">
+            Два REST API проекта на Rust. Первый — стартовый, для освоения технологий (Axum, сериализация, маршрутизация, in-memory хранилище) и проработки логики. Второй — основной проект с интеграцией базы данных (SQLx), миграциями, CRUD-операциями и асинхронными эндпоинтами.<br>
+            <br>
+        </p>
+    </div>
+    
+    <div class="portfolio-tech-wrapper">
+        <div class="portfolio-tech">
+            <span class="tech-tag">Rust</span>
+            <span class="tech-tag">Axum</span>
+            <span class="tech-tag">SQLx</span>
+            <span class="tech-tag">Tokio</span>
+        </div>
+    </div>
+    
+    <div class="portfolio-footer">
+        <div class="portfolio-links">
+            <a href="https://github.com/DT6503/Rust_pet_projects" target="_blank" class="portfolio-link">Исходный код</a>
+        </div>
+    </div>
+</div>
+
             <!-- Проект - Kotlin приложение с регистрацией -->
 <div class="portfolio-card">
     <div class="portfolio-header">
@@ -370,54 +343,30 @@
     </div>
 </div>
 
-
-
         </div>
 
-      
  </div>
    
 
-
 </section>
 
-
-
-<!-- Секция "Достижения" - особенный дизайн -->
+<!-- Секция "Достижения" -->
 <section class="achievements-section" id="achievements">
 
-
-    
-<!---->
 <div class="video-background">
         <video autoplay muted loop playsinline class="video-bg">
             <source src="video.mp4" type="video/mp4">
-
         </video>
         <div class="video-overlay"></div>
     </div>
 
-<!-- Узоры по бокам
-    <div class="pattern-left">
-        <img src="r1.png" alt="Узор слева" class="side-pattern">
-    </div>
-    <div class="pattern-right">
-        <img src="r1.png" alt="Узор справа" class="side-pattern">
-    </div> -->
-
-
-    
-
     <div class="achievements-container">
 
-
         <h2 class="section-title">Мои Достижения</h2>
-       <!-- <p class="section-subtitle">Профессиональные успехи и признание</p>-->
         
         <div class="achievements-timeline">
+
             <!-- Достижение 1 -->
-            
-            <!-- Достижение 2 -->
             <div class="achievement-item">
                 <div class="achievement-badge">
                     <span class="badge-icon">🎓</span>
@@ -437,7 +386,7 @@
                 </div>
             </div>
 
-            <!-- Достижение 3 -->
+            <!-- Достижение 2 -->
             <div class="achievement-item">
                 <div class="achievement-badge">
                     <span class="badge-icon">📜</span>
@@ -461,7 +410,7 @@
                 </div>
             </div>
 
-            <!-- Достижение 4 -->
+            <!-- Достижение 3 -->
             <div class="achievement-item">
                 <div class="achievement-badge">
                     <span class="badge-icon">🌍</span>
@@ -481,9 +430,7 @@
                 </div>
             </div>
 
-            
-
-            <!-- Достижение 5 -->
+            <!-- Достижение 4 -->
             <div class="achievement-item">
                 <div class="achievement-badge">
                     <span class="badge-icon">💼</span>
@@ -505,9 +452,35 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Достижение 5 - НЦОТ (ПОСЛЕДНЕЕ) -->
+            <div class="achievement-item">
+                <div class="achievement-badge">
+                    <span class="badge-icon">🏢</span>
+                </div>
+                <div class="achievement-content">
+                    <h3 class="achievement-title">Разработчик коллектора SIEM-системы в НЦОТ</h3>
+                    <span class="achievement-date">Отдел управления разработкой ПО</span>
+                    <p class="achievement-description">
+                        Работала техником-программистом коллектора SIEM-системы в Национальном центре обмена 
+                        трафиком (НЦОТ) в отделе управления разработкой ПО. Занималась сбором
+                        событий безопасности из разнородных источников, 
+                        анализом сетевого трафика.
+                    </p>
+                    <div class="achievement-meta">
+                        <span class="meta-item">SIEM</span>
+                        <span class="meta-item">GitLab</span>
+                        <span class="meta-item">Docker</span>
+                        <span class="meta-item">pgAdmin</span>
+                        <span class="meta-item">Wireshark</span>
+                        <span class="meta-item">Ubuntu</span>
+                        <span class="meta-item">Windows</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
 
   <!-- Активатор -->
     <div class="activator-container">
@@ -524,22 +497,8 @@
 
 </section>
 
-
-
  <!-- Секция "Технологии" -->
     <section class="technologies-section" id="technologies">
-
-
-<!-- НОВЫЕ - верхние -->
-   <!-- <div class="side-image left-top">
-        <img src="bu.png" alt="Декоративный элемент" class="tilted-image">
-    </div>
-    <div class="side-image right-top">
-        <img src="bu1.png" alt="Декоративный элемент" class="tilted-image">
-    </div>
-    <div class="side-image left-bottom1">
-        <img src="bu3.png" alt="Декоративный элемент" class="tilted-image">
-    </div>-->
 
         <div class="technologies-container">
             <h2 class="section-title">Стек технологий</h2>
@@ -568,10 +527,58 @@
                     </div>
                 </div>
 
+                <!-- Технология - Rust -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="Rust.png" alt="Rust" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Rust</h3>
+                    <p class="tech-description">
+                        Разработка безопасных и высокопроизводительных REST API. Использую ownership, 
+                        borrowing, трейты, pattern matching и обработку ошибок через Result/Option. 
+                        Опыт работы с Actix Web, SQLx и асинхронными рантаймами.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">Actix Web</span>
+                        <span class="tech-feature">SQLx</span>
+                        <span class="tech-feature">REST API</span>
+                        <span class="tech-feature">Async</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 75%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
+
+                <!-- Технология - Kotlin -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="kotlin.png" alt="Kotlin" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">Kotlin</h3>
+                    <p class="tech-description">
+                        Разработка современных Android-приложений и кроссплатформенных решений. 
+                        Использую корутины, расширения, null-безопасность и функциональные возможности языка.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">Coroutines</span>
+                        <span class="tech-feature">Android</span>
+                        <span class="tech-feature">Null Safety</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 80%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
+
                 <!-- Технология 2 - Qt -->
                 <div class="tech-card">
                       <div class="tech-icon">
-                        <img src="Qt.png" alt="C++" class="tech-icon-image">
+                        <img src="Qt.png" alt="Qt" class="tech-icon-image">
                     </div>
                     <h3 class="tech-title">Qt Framework</h3>
                     <p class="tech-description">
@@ -592,32 +599,10 @@
                     </div>
                 </div>
 
-                 <!-- Технология 3 - Kotlin -->
-<div class="tech-card">
-    <div class="tech-icon">
-        <img src="kotlin.png" alt="Kotlin" class="tech-icon-image">
-    </div>
-    <h3 class="tech-title">Kotlin</h3>
-    <p class="tech-description">
-        Разработка современных Android-приложений и кроссплатформенных решений. 
-        Использую корутины, расширения, null-безопасность и функциональные возможности языка.
-    </p>
-    <div class="tech-features">
-        <span class="tech-feature">Coroutines</span>
-        <span class="tech-feature">Android</span>
-        <span class="tech-feature">Null Safety</span>
-    </div>
-    <div class="tech-level">
-        <div class="level-bar">
-            <div class="level-fill" style="--level: 80%"></div>
-        </div>
-        <span class="level-text">Продвинутый</span>
-    </div>
-</div>
                 <!-- Технология 4 - Веб-разработка -->
                 <div class="tech-card">
                     <div class="tech-icon">
-                        <img src="Html.png" alt="C++" class="tech-icon-image">
+                        <img src="Html.png" alt="Web" class="tech-icon-image">
                     </div>
                     <h3 class="tech-title">Веб-разработка</h3>
                     <p class="tech-description">
@@ -640,18 +625,19 @@
                 <!-- Технология 5 - Базы данных -->
                 <div class="tech-card">
                     <div class="tech-icon">
-                      <img src="Access.png" alt="C++" class="tech-icon-image">
+                      <img src="Access.png" alt="DB" class="tech-icon-image">
                     </div>
                     <h3 class="tech-title">Базы данных</h3>
                     <p class="tech-description">
                         <br>
-                        Проектирование и оптимизация реляционных (SQLite, Access) и NoSQL баз данных. 
+                        Проектирование и оптимизация реляционных (SQLite, Access, PostgreSQL) и NoSQL баз данных. 
                         Написание сложных запросов, индексация, транзакции.
                     </p>
                     <div class="tech-features">
                         <span class="tech-feature">SQLite</span>
-                        <span class="tech-feature">MySQL</span>
+                        <span class="tech-feature">PostgreSQL</span>
                         <span class="tech-feature">Access</span>
+                        <span class="tech-feature">pgAdmin</span>
                     </div>
                     <div class="tech-level">
                         <div class="level-bar">
@@ -661,21 +647,22 @@
                     </div>
                 </div>
 
-                <!-- Технология 6 - Git  -->
+                <!-- Технология 6 - Git, GitLab, Docker -->
                 <div class="tech-card">
                     <div class="tech-icon">
-                        <img src="Github.png" alt="C++" class="tech-icon-image">
+                        <img src="Github.png" alt="Git" class="tech-icon-image">
                     </div>
-                    <h3 class="tech-title">Git & GitHub</h3>
+                    <h3 class="tech-title">Git, GitLab & Docker</h3>
                     <p class="tech-description">
-                        <br><br>
-                        Владение системой контроля версий Git. 
-                        Опыт работы с GitHub Actions, развертыванием приложений.
+                        <br>
+                        Владение системой контроля версий Git и платформой GitLab. 
+                        Опыт контейнеризации приложений с помощью Docker, работа с CI/CD.
                     </p>
                     <div class="tech-features">
                         <span class="tech-feature">Git</span>
-                        <span class="tech-feature">GitHub</span>
-                        
+                        <span class="tech-feature">GitLab</span>
+                        <span class="tech-feature">Docker</span>
+                        <span class="tech-feature">CI/CD</span>
                     </div>
                     <div class="tech-level">
                         <div class="level-bar">
@@ -688,7 +675,7 @@
                 <!-- Технология 7 - Компьютерные сети -->
                 <div class="tech-card">
                     <div class="tech-icon">
-                       <img src="Net.png" alt="C++" class="tech-icon-image">
+                       <img src="Net.png" alt="Net" class="tech-icon-image">
                     </div>
                     <h3 class="tech-title">Компьютерные сети</h3>
                     <p class="tech-description">
@@ -709,29 +696,29 @@
                     </div>
                 </div>
 
-<!-- Технология 8 - RPA & Автоматизация -->
-<div class="tech-card">
-    <div class="tech-icon">
-        <img src="RPA1.png" alt="RPA" class="tech-icon-image">
-    </div>
-    <h3 class="tech-title">RPA & Автоматизация</h3>
-    <p class="tech-description">
-        Разработка роботизированных систем автоматизации процессов. 
-        Создание RPA-решений для парсинга данных, мониторинга цен и интеграции с API.
-    </p>
-    <div class="tech-features">
-        <span class="tech-feature">Парсинг данных</span>
-        <span class="tech-feature">Google API</span>
-        <span class="tech-feature">Автоматизация</span>
-        <span class="tech-feature">Мониторинг</span>
-    </div>
-    <div class="tech-level">
-        <div class="level-bar">
-            <div class="level-fill" style="--level: 80%"></div>
-        </div>
-        <span class="level-text">Продвинутый</span>
-    </div>
-</div>
+                <!-- Технология 8 - RPA & Автоматизация -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="RPA1.png" alt="RPA" class="tech-icon-image">
+                    </div>
+                    <h3 class="tech-title">RPA & Автоматизация</h3>
+                    <p class="tech-description">
+                        Разработка роботизированных систем автоматизации процессов. 
+                        Создание RPA-решений для парсинга данных, мониторинга цен и интеграции с API.
+                    </p>
+                    <div class="tech-features">
+                        <span class="tech-feature">Парсинг данных</span>
+                        <span class="tech-feature">Google API</span>
+                        <span class="tech-feature">Автоматизация</span>
+                        <span class="tech-feature">Мониторинг</span>
+                    </div>
+                    <div class="tech-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="--level: 80%"></div>
+                        </div>
+                        <span class="level-text">Продвинутый</span>
+                    </div>
+                </div>
 
 <!-- Технология 11 - Figma -->
 <div class="tech-card">
@@ -760,7 +747,6 @@
             </div>
         </div>
 
-
 <!-- Активатор -->
     <div class="activator-container">
         <div class="activator" onclick="activateRobot('robot-technologies')">
@@ -775,169 +761,6 @@
     </div>
 
     </section>
-
-<!-- СЕКЦИЯ KOTLIN -->
-<section class="kotlin-showcase" id="kotlin">
-    <!-- Фоновый градиент (убран) -->
-
-    <div class="kotlin-container">
-        <!-- Заголовок (поднят выше) -->
-        <div class="kotlin-header">
-            <span class="kotlin-sup-title">KOTLIN DEVELOPMENT</span>
-            <h2 class="kotlin-title">
-                <span class="kotlin-title-highlight">Kotlin</span> — мой основной язык
-            </h2>
-            <p class="kotlin-subtitle">
-                Более 100 решенных задач, глубокое понимание синтаксиса и официальной документации
-            </p>
-        </div>
-
-        <!-- СТАТИСТИКА -->
-        <div class="kotlin-stats">
-            <div class="stat-card">
-                <div class="stat-number">100+</div>
-                <div class="stat-label">Решенных задач</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">85%</div>
-                <div class="stat-label">Уровень Intermediate</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">4+</div>
-                <div class="stat-label">Android проектов</div>
-            </div>
-        </div>
-
-        <!-- ОСНОВНОЙ КОНТЕНТ -->
-        <div class="kotlin-content">
-            <!-- Левая карточка с ВСЕМИ технологиями (укорочена) -->
-            <div class="kotlin-language-card">
-                <div class="kotlin-card-header">
-                    <div class="kotlin-icon-wrapper">
-                        <img src="kotlin.png" alt="Kotlin" class="kotlin-icon">
-                    </div>
-                    <div class="kotlin-title-group">
-                        <h3 class="kotlin-language-title">Kotlin</h3>
-                        <span class="kotlin-level">Intermediate</span>
-                    </div>
-                </div>
-
-                <!-- Прогресс -->
-                <div class="kotlin-progress">
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%"></div>
-                    </div>
-                    <span class="progress-text">Продолжаю углубляться</span>
-                </div>
-
-                <!-- ВСЕ ТЕХНОЛОГИИ KOTLIN В ОДНОМ МЕСТЕ -->
-                <div class="kotlin-all-tech">
-                    <!-- Основы -->
-                    <div class="tech-category">
-                        <h4 class="tech-category-title">Основы языка</h4>
-                        <div class="tech-grid">
-                            <span class="tech-item">var/val</span>
-                            <span class="tech-item">Типы данных</span>
-                            <span class="tech-item">Строки</span>
-                            <span class="tech-item">Boolean</span>
-                            <span class="tech-item">if/when</span>
-                            <span class="tech-item">Циклы</span>
-                            <span class="tech-item">Массивы</span>
-                            <span class="tech-item">Списки</span>
-                            <span class="tech-item">Функции</span>
-                            <span class="tech-item">Арифметика</span>
-                        </div>
-                    </div>
-
-                    <!-- ООП -->
-                    <div class="tech-category">
-                        <h4 class="tech-category-title">ООП</h4>
-                        <div class="tech-grid">
-                            <span class="tech-item">Классы/объекты</span>
-                            <span class="tech-item">Конструкторы</span>
-                            <span class="tech-item">Наследование</span>
-                            <span class="tech-item">Абстрактные классы</span>
-                            <span class="tech-item">Интерфейсы</span>
-                            <span class="tech-item">Модификаторы</span>
-                            <span class="tech-item">Сеттеры/геттеры</span>
-                            <span class="tech-item">Полиморфизм</span>
-                            <span class="tech-item">Enum классы</span>
-                            <span class="tech-item">Data классы</span>
-                        </div>
-                    </div>
-
-                    <!-- Продвинутые возможности -->
-                    <div class="tech-category">
-                        <h4 class="tech-category-title">Продвинутые возможности</h4>
-                        <div class="tech-grid">
-                            <span class="tech-item">Null Safety</span>
-                            <span class="tech-item">Лямбды</span>
-                            <span class="tech-item">Extension функции</span>
-                            <span class="tech-item">Делегирование</span>
-                            <span class="tech-item">lazy/observable</span>
-                            <span class="tech-item">Backing fields</span>
-                            <span class="tech-item">Sealed классы</span>
-                            <span class="tech-item">Value классы</span>
-                            <span class="tech-item">TODO()/Nothing</span>
-                            <span class="tech-item">Анонимные функции</span>
-                        </div>
-                    </div>
-
-                    <!-- Android разработка -->
-                    <div class="tech-category">
-                        <h4 class="tech-category-title">Android разработка</h4>
-                        <div class="tech-grid">
-                            <span class="tech-item">Jetpack Compose</span>
-                            <span class="tech-item">XML layout</span>
-                            <span class="tech-item">Activity/Fragment</span>
-                            <span class="tech-item">RecyclerView</span>
-                            <span class="tech-item">SQLite</span>
-                            <span class="tech-item">Корутины</span>
-                            <span class="tech-item">LiveData/Flow</span>
-                            <span class="tech-item">MVVM</span>
-                            <span class="tech-item">Адаптеры</span>
-                            <span class="tech-item">Работа с API</span>
-                        </div>
-                    </div>
-
-                    <!-- Инструменты -->
-                    <div class="tech-category">
-                        <h4 class="tech-category-title">Инструменты</h4>
-                        <div class="tech-grid">
-                            <span class="tech-item">Git/GitHub</span>
-                            <span class="tech-item">Pull Requests</span>
-                            <span class="tech-item">Gradle</span>
-                            <span class="tech-item">Android Studio</span>
-                            <span class="tech-item">Kotlin Playground</span>
-                            <span class="tech-item">Документация</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ссылки (только документация и playground) -->
-                <div class="kotlin-links">
-                    <a href="https://kotlinlang.org/docs/home.html" target="_blank" class="kotlin-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Документация</span>
-                    </a>
-                    <a href="https://play.kotlinlang.org/" target="_blank" class="kotlin-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 3L19 12L5 21V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Playground</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Правая колонка УДАЛЕНА - всё перенесено в левую -->
-        </div>
-
-        <!-- ПРИМЕР КОДА УБРАН ПОЛНОСТЬЮ -->
-    </div>
-</section>
 
 <!-- Секция Контакты -->
 <section class="contact-section" id="contact">
@@ -975,9 +798,8 @@
                 </form>
             </div>
             
-           <!-- Блок контактов - вертикально друг под другом -->
+           <!-- Блок контактов -->
 <div class="contact-info-vertical">
-    <!-- Социальные сети -->
     <div class="social-contact">
         <h3 class="section-mini-title">Социальные сети</h3>
         <div class="social-links-minimal">
@@ -988,7 +810,6 @@
                     </svg>
                     <div class="social-text-wrapper">
                         <span class="social-name">Telegram</span>
-                        <span class="social-handle">@TDashaT65</span>
                     </div>
                 </div>
                 <span class="social-username">@TDashaT65</span>
@@ -1001,7 +822,6 @@
                     </svg>
                     <div class="social-text-wrapper">
                         <span class="social-name">Instagram</span>
-                        <span class="social-handle">talkodaria</span>
                     </div>
                 </div>
                 <span class="social-username">@talkodaria</span>
@@ -1014,7 +834,6 @@
                     </svg>
                     <div class="social-text-wrapper">
                         <span class="social-name">VK</span>
-                        <span class="social-handle">dariatalko</span>
                     </div>
                 </div>
                 <span class="social-username">dariatalko</span>
@@ -1022,52 +841,21 @@
         </div>
     </div>
 
-                <!-- Email карточка -->
-                  <h3 class="section-mini-title">Иной способ связаться со мной</h3>
-                <div class="email-card">
-                    
-                    <div class="email-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="email-content">
-                        <a href="mailto:dt656503@gmail.com" class="email-address">dt656503@gmail.com</a>
-                        <span class="email-note">Напишите мне на почту</span>
-                    </div>
-                </div>
-            </div>
+    <h3 class="section-mini-title">Иной способ связаться со мной</h3>
+    <div class="email-card">
+        <div class="email-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
-
-        <!-- Локация с картой - растянута на всю ширину -->
-      <!--  <div class="location-section">
-            <div class="location-card">
-               <div class="location-header">
-    <div class="location-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <div class="email-content">
+            <a href="mailto:dt656503@gmail.com" class="email-address">dt656503@gmail.com</a>
+            <span class="email-note">Напишите мне на почту</span>
+        </div>
     </div>
-    <div class="location-info">
-        <h3>Локация</h3>
-        <p>Минск, Центр Цифрового Развития</p>
-    </div>
-</div>-->
-                <div class="location-map">
-    <!-- Яндекс.Карты с маркером Центра Цифрового Развития -->
-   <!-- <iframe 
-        src="https://yandex.ru/map-widget/v1/?ll=27.588584%2C53.924621&z=17&pt=27.588584%2C53.924621%2Cpm2rdl&l=map"
-        width="100%" 
-        height="300" 
-        style="border:0; border-radius: 15px; filter: invert(90%) hue-rotate(180deg) contrast(85%);"
-        allowfullscreen="true">
-    </iframe>
 </div>
-            </div>
         </div>
-    </div>-->
 
     <!-- Активатор -->
     <div class="activator-container">
@@ -1083,8 +871,6 @@
     </div>
 </section>
 
-
-<!-- После блока с картой, перед закрытием contact-container -->
 <div class="testimonial-section">
     <div class="testimonial-card">
         <div class="testimonial-icon">💬</div>
@@ -1098,10 +884,6 @@
     </div>
 </div>
 
-
-
-
-
 <!-- ИГРА -->
 <section class="interactive-section" id="game">
     <div class="game-container">
@@ -1109,7 +891,6 @@
         <p class="game-desc section-subtitle">Перетащи блоки кода в правильном порядке, чтобы собрать работающую программу</p>
 
         <div class="game-wrapper">
-            <!-- Блоки кода для перетаскивания -->
             <div class="code-blocks-container">
                 <div class="code-block" data-order="1">#include &lt;iostream&gt;</div>
                 <div class="code-block" data-order="2">using namespace std;</div>
@@ -1119,7 +900,6 @@
                 <div class="code-block" data-order="6">}</div>
             </div>
             
-            <!-- Область редактора -->
             <div class="editor-area">
                 <div class="editor-header">
                     <div class="editor-title">📝 Редактор кода</div>
@@ -1132,7 +912,6 @@
             </div>
         </div>
         
-        <!-- Кнопки управления -->
         <div class="game-controls">
             <button class="game-btn btn-check" id="checkCode">
                 <span>✅ Проверить</span>
@@ -1142,25 +921,21 @@
             </button>
         </div>
         
-        <!-- Результат -->
         <div class="game-result" id="gameResult"></div>
     </div>
 </section>
 
-
 <!-- Футер -->
 <footer class="footer">
     <div class="footer-container">
-        <!-- Верхняя часть футера -->
         <div class="footer-main">
-            <!-- Лого и описание -->
             <div class="footer-brand">
                 <a href="#home" class="footer-logo">
                     <img src="visitka.jpg" alt="Лого" class="logo-image">
                     <span>DT65</span>
                 </a>
                 <p class="footer-description">
-                    Создаю быстрые и современные приложения. Открыта для новых проектов и сотрудничества.
+                    Создаю быстрые и современные приложения на Kotlin, C++, Rust и Qt. Открыта для новых проектов и сотрудничества.
                 </p>
                 <div class="footer-social">
                     <a href="https://t.me/TDashaT65" target="_blank" class="social-link" title="Telegram">
@@ -1181,7 +956,6 @@
                 </div>
             </div>
 
-            <!-- Быстрые ссылки -->
             <div class="footer-nav">
                 <h3 class="footer-title">Быстрые ссылки</h3>
                 <ul class="footer-links">
@@ -1192,7 +966,6 @@
                 </ul>
             </div>
 
-            <!-- Для работодателей -->
             <div class="footer-employers">
                 <h3 class="footer-title">Для работодателей</h3>
                 <ul class="footer-links">
@@ -1203,7 +976,6 @@
                 </ul>
             </div>
 
-            <!-- Ресурсы -->
             <div class="footer-resources">
                 <h3 class="footer-title">Ресурсы</h3>
                 <ul class="footer-links">
@@ -1214,7 +986,6 @@
             </div>
         </div>
 
-        <!-- Нижняя часть футера -->
         <div class="footer-bottom">
             <div class="footer-copyright">
                 <p>&copy; 2025 DT65. Все права защищены.</p>
@@ -1247,18 +1018,12 @@
     <source src="contacts_use2.mp3" type="audio/mp3">
 </audio>
 
-<!-- УДАЛИТЕ старый audio элемент с id="robotAudio" -->
-    
-
 <script src="game.js"></script>
-
-
 
 </body>
 
-
 <script>
-    //Формы - ПЕРЕНЕСИТЕ ЭТОТ КОД В САМЫЙ КОНЕЦ ФАЙЛА
+    // Форма
 function initContactForm() {
     const GETFORM_ENDPOINT = 'https://getform.io/f/azygkywb';
     const feedbackForm = document.getElementById('feedbackForm');
@@ -1293,15 +1058,12 @@ function initContactForm() {
             message: message.value
         };
 
-        console.log('📤 Отправка данных:', formData);
-
         fetch(GETFORM_ENDPOINT, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(formData)
         })
         .then(response => {
-            console.log('📨 Ответ сервера:', response.status);
             if (response.ok) {
                 messageEl.textContent = '✅ Сообщение отправлено!';
                 messageEl.style.display = 'block';
@@ -1330,13 +1092,8 @@ function initContactForm() {
     });
 }
 
-
-// ИЛИ если форма загружается динамически, добавьте:
 setTimeout(initContactForm, 1000);
 
-
-
-// Добавьте в script.js или в конец вашего HTML файла
 document.addEventListener('DOMContentLoaded', function() {
     const cookieTrigger = document.querySelector('.cookie-trigger');
     const cookieHint = document.querySelector('.cookie-hint');
@@ -1352,53 +1109,31 @@ document.addEventListener('DOMContentLoaded', function() {
             cookieText.style.color = '#999';
             cookieText.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.5)';
         });
-        
-        // Также добавляем эффект при наведении на саму подсказку
-        cookieHint.addEventListener('mouseenter', function() {
-            cookieText.style.color = '#ffffff';
-            cookieText.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.8)';
-        });
-        
-        cookieHint.addEventListener('mouseleave', function() {
-            // Возвращаем цвет только если курсор не на печеньке
-            if (!cookieTrigger.matches(':hover')) {
-                cookieText.style.color = '#999';
-                cookieText.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.5)';
-            }
-        });
     }
 });
 
-// Показ модального окна на мобильных устройствах
 function showMobileModal() {
-    // Проверяем, мобильное ли устройство
     const isMobile = window.innerWidth <= 768;
     const modal = document.getElementById('mobileModal');
     const hasSeenModal = localStorage.getItem('hasSeenMobileModal');
     
     if (isMobile && modal && !hasSeenModal) {
-        // Показываем модалку с небольшой задержкой
         setTimeout(() => {
             modal.classList.add('active');
-            // Блокируем скролл
             document.body.style.overflow = 'hidden';
         }, 1000);
     }
 }
 
-// Закрытие модального окна
 function closeMobileModal() {
     const modal = document.getElementById('mobileModal');
     if (modal) {
         modal.classList.remove('active');
-        // Восстанавливаем скролл
         document.body.style.overflow = '';
-        // Сохраняем информацию, что пользователь видел модалку
         localStorage.setItem('hasSeenMobileModal', 'true');
     }
 }
 
-// Закрытие при клике на фон
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('mobileModal');
     
@@ -1410,26 +1145,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Проверяем при загрузке страницы
     showMobileModal();
-    
-    // Также проверяем при изменении размера окна
     window.addEventListener('resize', showMobileModal);
 });
 
-// Закрытие по клавише Escape
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeMobileModal();
     }
 });
-
 </script>
 
-
-
-
 </html>
-
-
-
