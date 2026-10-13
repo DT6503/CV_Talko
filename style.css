@@ -4229,3 +4229,210 @@ body.menu-open {
         font-size: 0.7rem;
     }
 }
+
+
+/* ============ БЛОК-ПИСЬМО: SOC ============ */
+.soc-letter-section {
+    background: var(--black-card);
+    padding: 60px 0 80px;
+    position: relative;
+    border-top: 1px solid var(--gray-dark);
+    overflow: hidden;
+}
+
+.soc-letter-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(126, 73, 250, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(245, 158, 11, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.soc-letter-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.soc-letter-card {
+    background: var(--black-light);
+    border: 1px solid var(--gray-dark);
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.soc-letter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--purple), var(--yellow));
+}
+
+.soc-letter-card:hover {
+    border-color: var(--purple);
+}
+
+/* Шапка */
+.soc-letter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.soc-letter-icon {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 0 12px rgba(126, 73, 250, 0.4));
+}
+
+.soc-letter-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--yellow);
+    background: rgba(245, 158, 11, 0.1);
+    padding: 0.35rem 0.9rem;
+    border-radius: 30px;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+/* Заголовок */
+.soc-letter-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.soc-letter-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--purple), var(--yellow));
+    border-radius: 3px;
+}
+
+/* Тело письма */
+.soc-letter-body {
+    border-left: 3px solid var(--purple);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.soc-letter-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray);
+    font-style: italic;
+}
+
+.soc-letter-highlight {
+    color: var(--yellow);
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 2px;
+}
+
+/* Футер */
+.soc-letter-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-dark);
+    flex-wrap: wrap;
+}
+
+.soc-letter-sign {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.soc-letter-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.soc-letter-link:hover {
+    color: var(--yellow);
+    gap: 0.8rem;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .soc-letter-section {
+        padding: 40px 0 60px;
+    }
+
+    .soc-letter-card {
+        padding: 2rem 1.5rem;
+        border-radius: 18px;
+    }
+
+    .soc-letter-title {
+        font-size: 1.6rem;
+    }
+
+    .soc-letter-body {
+        padding-left: 1rem;
+    }
+
+    .soc-letter-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .soc-letter-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .soc-letter-card {
+        padding: 1.6rem 1.2rem;
+    }
+
+    .soc-letter-title {
+        font-size: 1.4rem;
+    }
+
+    .soc-letter-icon {
+        font-size: 1.8rem;
+    }
+
+    .soc-letter-text {
+        font-size: 0.95rem;
+    }
+}
